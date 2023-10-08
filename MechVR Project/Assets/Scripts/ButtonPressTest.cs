@@ -11,13 +11,11 @@ public class ButtonPressTest : MonoBehaviour
     [SerializeField] private Material _mat1;
     [SerializeField] private Material _mat2;
 
-    // Start is called before the first frame update
     void Start()
     {
         _changeMat = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
