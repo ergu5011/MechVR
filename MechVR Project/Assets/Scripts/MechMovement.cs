@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MechMovement : MonoBehaviour
+public class MechMovement : MonoBehaviour, IInteractable
 {
     [SerializeField] private HingeJoint _turnLever;
     [SerializeField] private HingeJoint _moveLever;
@@ -17,9 +17,14 @@ public class MechMovement : MonoBehaviour
 
     private Rigidbody _rb;
 
+    // Animation related variables
     private float _moveState;
     [SerializeField] private GameObject _mech;
     private Animator _mechAnim;
+
+    // Slug related variables
+    [SerializeField] private GameObject _slugs;
+    private bool _slugged;
 
     void Start()
     {
@@ -30,6 +35,9 @@ public class MechMovement : MonoBehaviour
 
     void Update()
     {
+        // Disables movement if the mech has slugs on it
+        if (_slugged == true) return;
+
         // Gets angle of turn lever and converts it to speed
         _turnAngle = _turnLever.angle;
         _turnSpeed = _turnsSpeedMax * (_turnAngle / 35f);
@@ -46,5 +54,24 @@ public class MechMovement : MonoBehaviour
         _moveState = _moveSpeed / _moveSpeedMax;
         if (_moveState < 0) _moveState *= -1f; // Inverses animation value if moving backwards
         _mechAnim.SetFloat("MoveState", _moveState);
+    }
+
+    private void Slugged()
+    {
+        _slugged = true;
+
+        _slugs.SetActive(true);
+    }
+
+    public void UnSlugged()
+    {
+        _slugged = false;
+
+        _slugs.SetActive(false);
+    }
+
+    public void Interact()
+    {
+        Slugged();
     }
 }
