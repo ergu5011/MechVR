@@ -32,14 +32,24 @@ public class ThrownCrystal : MonoBehaviour
     {
         if (_hasCollided == false)
         {
+            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
+            if (interactable != null)
+            {
+                interactable.Interact();
+            }
+
             _rb.useGravity = false;
             _rb.constraints = RigidbodyConstraints.FreezeAll;
 
             _boomParticle.Play();
 
+            _boomParticle.transform.SetParent(null);
+
             _crystalBody.SetActive(false);
 
             _hasCollided = true;
+
+            Destroy(gameObject);
         }
     }
 }

@@ -17,8 +17,6 @@ public class MechArm : MonoBehaviour
         if (other.CompareTag("ChargedCrystal"))
         {
             _isGrabbable = true;
-
-            Debug.Log("grabbable");
         }
     }
 
@@ -32,8 +30,6 @@ public class MechArm : MonoBehaviour
 
     public void ActivateArm()
     {
-        //_isActivated = true;
-
         if (_isGrabbable == true && _isHeld == false)
         {
             _isHeld = true;
@@ -51,9 +47,5 @@ public class MechArm : MonoBehaviour
 
             _isHeld = false;
         }
-
-        Debug.Log("grabbing");
-
-        //_isActivated = false;
     }
 }

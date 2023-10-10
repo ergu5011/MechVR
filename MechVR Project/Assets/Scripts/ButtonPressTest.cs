@@ -27,13 +27,13 @@ public class ButtonPressTest : MonoBehaviour
         {
             _changeMat.sharedMaterial = _mat2;
 
-            Debug.Log("button is red now");
+            //Debug.Log("button is red now");
         }
         else
         {
             _changeMat.sharedMaterial = _mat1;
 
-            Debug.Log("button is blue now");
+            //Debug.Log("button is blue now");
         }
 
         _state = !_state;
