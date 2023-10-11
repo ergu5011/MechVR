@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c072f84e-a2a7-44f7-9536-4c4539923c10}">
+		<property name="assetPath">
+			<value>SFX/447930__breviceps__step-on-a-slug-splat-2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.90689342403628115</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a2789b36-80ee-4d29-9f4a-c34ca6cf83c6}</destination>
+		</relationship>
+	</object>
+</objects>
