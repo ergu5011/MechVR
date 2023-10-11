@@ -350,8 +350,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: MechVRFmod/MechVRFmod.fspro
-  sourceBankPath: MechVRFmod/Build
+  sourceProjectPath: MechVR_FMOD/MechVR_FMOD.fspro
+  sourceBankPath: MechVR_FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -375,7 +375,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Ambiance
+  - Ambience
   - SFX
   - Voices
   BanksToLoad: []

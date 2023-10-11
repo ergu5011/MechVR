@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5c8cd4cf-8297-4327-a17e-7d6c8476dc6b}">
+		<property name="assetPath">
+			<value>SFX/114190__edgardedition__glassthud10.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.22487528344671201</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84a91ba9-0513-4e6d-9a92-a490b5c3beed}</destination>
+		</relationship>
+	</object>
+</objects>

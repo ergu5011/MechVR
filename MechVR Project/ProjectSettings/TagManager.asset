@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ChargedCrystal
+  - InertCrystal
+  - Slug
+  - Mushroom
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,8 @@ public class DestroyableWall : MonoBehaviour, IInteractable
         _wallBody.SetActive(false);
 
         _destroyParticle.Play();
+
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.rockDestruction, this.transform.position);
     }
 
     public void Interact()

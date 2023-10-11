@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{52fed076-9146-4d03-9321-f0b64b262fad}">
+		<property name="assetPath">
+			<value>SFX/587196__derplayer__explosion_06.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.48482993197278912</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84a91ba9-0513-4e6d-9a92-a490b5c3beed}</destination>
+		</relationship>
+	</object>
+</objects>

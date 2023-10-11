@@ -38,6 +38,8 @@ public class ThrownCrystal : MonoBehaviour
                 interactable.Interact();
             }
 
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.crystalExplosion, this.transform.position);
+
             _rb.useGravity = false;
             _rb.constraints = RigidbodyConstraints.FreezeAll;
 
