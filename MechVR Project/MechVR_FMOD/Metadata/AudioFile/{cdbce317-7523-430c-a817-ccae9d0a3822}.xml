@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{cdbce317-7523-430c-a817-ccae9d0a3822}">
+		<property name="assetPath">
+			<value>Voices/Intro/MechVR_Dialogue_Intro_4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>9.8742857142857137</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84a91ba9-0513-4e6d-9a92-a490b5c3beed}</destination>
+		</relationship>
+	</object>
+</objects>

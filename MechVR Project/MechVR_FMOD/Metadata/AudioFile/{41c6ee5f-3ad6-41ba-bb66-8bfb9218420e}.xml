@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{41c6ee5f-3ad6-41ba-bb66-8bfb9218420e}">
+		<property name="assetPath">
+			<value>Voices/PETRA/MechVR_PETRA_Food.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.0563265306122447</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84a91ba9-0513-4e6d-9a92-a490b5c3beed}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,42 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Scanner : MonoBehaviour
 {
     [SerializeField] private GameObject _scanZone;
 
-    private string _tagComparison;
-    private string _voiceLine;
+    [SerializeField] private PlayableDirector _activateTimeline;
 
-    public void Scanning()
+    private string _tagComparison;
+
+    public void ActivateScanner()
     {
-        _scanZone.SetActive(true);
-        _scanZone.SetActive(false);
+        _activateTimeline.Play();
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void Scanning()
     {
         switch (_tagComparison)
         {
             case "Slug":
-                _voiceLine = "123";
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.scannedSlug, this.transform.position);
                 break;
             case "ChargedCrystal":
-                _voiceLine = "123";
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.scannedCCrystal, this.transform.position);
                 break;
             case "InertCrystal":
-                _voiceLine = "123";
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.scannedICrystal, this.transform.position);
                 break;
             case "Mushroom":
-                _voiceLine = "123";
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.scannedMushroom, this.transform.position);
                 break;
             default:
-                _voiceLine = "123";
+                AudioManager.instance.PlayOneShot(FMODEvents.instance.scannedNull, this.transform.position);
                 break;
-
         }
 
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.slugSplat, this.transform.position);
+        _tagComparison = null;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        _tagComparison = other.gameObject.tag;
     }
 }

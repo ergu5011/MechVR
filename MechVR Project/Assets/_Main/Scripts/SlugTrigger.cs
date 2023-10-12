@@ -18,6 +18,8 @@ public class SlugTrigger : MonoBehaviour
                 interactable.Interact();
             }
 
+            Destroy(gameObject);
+
             _hasTriggered = true;
         }
     }

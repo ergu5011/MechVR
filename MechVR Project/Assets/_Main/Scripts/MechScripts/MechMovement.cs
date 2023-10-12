@@ -75,6 +75,7 @@ public class MechMovement : MonoBehaviour, IInteractable
         _moveState = 0f;
         _mechAnim.SetFloat("MoveState", _moveState);
 
+        _moveSpeed = 0f;
         _turnSpeed = 0f;
 
         _slugged = true;
